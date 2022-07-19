@@ -4,7 +4,7 @@ Modulo para trabajar con Microsoft Word
 
 *Read this in other languages: [English](Manual_MicrosoftWord.md), [Portugues](Manual_MicrosoftWord.pr.md), [Español](Manual_MicrosoftWord.es.md).*
   
-![banner](C:\Users\nicog\Desktop\Rocketbot\modules\MicrosoftWord\docs\imgs\banner.png)
+![banner](/docs/imgs/Banner_C:\Users\nicog\Desktop\Rocketbot\modules\MicrosoftWord.png)
 ## Como instalar este módulo
   
 __Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
@@ -35,25 +35,25 @@ Extrae texto de documento Word.
 | --- | --- | --- |
 |Resultado|Almacena el resultado en una variable|Variable|
 |Sesión|Sesión del archivo|Word1|
-|Agregar Detalles|||
+|Agregar Detalles|Escoje si los datos almacenados se guardarán con detalles como estilo, alineación, etc.|True|
 
 ### Copiar y pegar texto
   
 Copiar texto entre rangos del documento Word y pegarlo en otro documento.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Inicio del rango|Comienzo del rango|0|
-|Fin del rango|Fin del rango|40|
+|Inicio del rango|Posición del rango desde donde comienza a copiar el comando.|0|
+|Fin del rango|Posición del rango hasta donde copia el comando.|40|
 |Sesión del archivo a copiar|Sesión del archivo|Word1|
-|Archivo|Elige el documento|archivo.docx|
+|Archivo|Elige el documento donde se pega el contenido copiado.|archivo.docx|
 
 ### Copiar texto
   
 Copiar texto al portapapeles entre rangos del documento Word
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Inicio del rango|Comienzo del rango|0|
-|Fin del rango|Fin del rango|40|
+|Inicio del rango|Posición del rango desde donde comienza a copiar el comando.|0|
+|Fin del rango|Posición del rango hasta donde copia el comando.|40|
 |Sesión|Sesión del archivo|Word1|
 
 ### Pegar texto
@@ -79,9 +79,9 @@ Agregar tabla en un documento Word.
 | --- | --- | --- |
 |Numero de filas|Numero de filas que tendrá la tabla|3 |
 |Numero de columnas|Numero de columnas que tendrá la tabla|4 |
-|Estilo de tabla|Estilo de los bordes de la tabla||
+|Estilo de tabla|Estilo de tabla predeterminada de Microsoft Word|Colorful Grid|
 |Sesión|Sesión del archivo|Word1|
-|Estilos del borde|||
+|Estilos del borde|Estilo de los bordes de la tabla. Tipo de línea y tamaño.|Line type: Single wavy / Line size: 1 1/2 points|
 
 ### Leer tablas
   
@@ -99,12 +99,12 @@ Editar tabla de un documento Word.
 | --- | --- | --- |
 |Numero de tabla|Número de tabla que será editada|1|
 |Sesión|Sesión del archivo|Word1|
-|Ingrese el numero de fila a eliminar|Numero de fila a eliminar de la tabla| |
-|Ingrese el numero de columna a eliminar|Numero de columna a eliminar de la tabla| |
-|Insertar fila|Si se selecciona, agrega una fila al final de la tabla||
-|Insertar columna|Si se selecciona, agrega una columna al final de la tabla||
-|Ancho de columna|Ancho que tendrá cada columna de la tabla|140|
-|Alto de fila|Alto que tendrá cada fila de la tabla|25|
+|Ingrese el numero de fila a eliminar|Opcional. El numero de fila ingresado determina qué fila será eliminada de la tabla.| |
+|Ingrese el numero de columna a eliminar|Opcional. El numero de columna ingresado determina qué columna será eliminada de la tabla| |
+|Insertar fila|Si se selecciona, agrega una fila al final de la tabla|True|
+|Insertar columna|Si se selecciona, agrega una columna al final de la tabla|False|
+|Ancho de columna|Ancho en puntos que tendrá cada columna de la tabla|140|
+|Alto de fila|Alto en puntos que tendrá cada fila de la tabla|25|
 
 ### Guardar documento
   
@@ -121,13 +121,13 @@ Escribe en un documento Word.
 | --- | --- | --- |
 |Sesión|Sesión del archivo|Word1|
 |Escriba texto|Texto que se escribirá en el documento|Lorem ipsum |
-|Tipo de texto|Selector del tipo de texto||
-|Nivel||1-9|
-|Tamaño de fuente||12|
-|Alineación|||
-|Negrita|||
-|Cursiva|||
-|Subrayar|||
+|Tipo de texto|Selector del tipo de texto que tendrá el texto escrito.|Subtitle|
+|Nivel|Nivel que tendrá el texto escrito.|1-9|
+|Tamaño de fuente|Tamaño de fuente que tendrá el texto escrito.|12|
+|Alineación|Alineación que tendrá el texto escrito.|Left|
+|Negrita|Seleccionar si el texto irá en negrita.|True|
+|Cursiva|Seleccionar si el texto irá en cursiva.|True|
+|Subrayar|Seleccionar si el texto irá subrayado.|False|
 
 ### Cerrar documento
   
@@ -166,7 +166,7 @@ Busca el párrafo donde se encuentra el texto indicado.
 | --- | --- | --- |
 |Sesión|Sesión del archivo|Word1|
 |Texto a Buscar|Texto que sera usado para localizar el parrafo|Hola mundo|
-|Nombre de la variable|Almacena el resultado en una variable|Varible|
+|Nombre de la variable|Almacena el resultado en una variable|Variable|
 
 ### Contar párrafos
   
@@ -174,7 +174,7 @@ Cuenta la cantidad de párrafos del documento. Incluye los campos de tablas.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Sesión|Sesión del archivo|Word1|
-|Nombre de la variable|Almacena el resultado en una variable|Varible|
+|Nombre de la variable|Almacena el número de párrafos en una variable|Variable|
 
 ### Remplazar texto en párrafo
   
@@ -182,7 +182,7 @@ Remplaza el texto de un párrafo.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Sesión|Sesión del archivo|Word1|
-|Texto a Buscar||Hola mundo|
+|Texto a Buscar|Texto que será buscado en los párrafos listados.|Hola mundo|
 |Texto a Remplazar|Texto que sera reemplazado|Hola mundo|
 |Lista de párrafo|Parrafos donde buscara el texto especificado|Separados por comas ',' ejemplo: 1,2|
 
@@ -201,5 +201,5 @@ Agregar texto a un bookmark.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Sesión|Sesión del archivo|Word1|
-|Texto a agregar||Hola mundo|
-|Nombre del Marcador||Marcador 1|
+|Texto a agregar|Texto que será agregado al marcador elegido.|Hola mundo|
+|Nombre del Marcador|Nombre del marcador donde se agregará el texto.|Marcador 1|

@@ -11,7 +11,9 @@
   "mac": false,
   "docker": false,
   "name": "MicrosoftWord",
-  "dependencies": {},
+  "dependencies": {
+    "pywin32": "228"
+  },
   "title": {
     "en": "Microsoft Word",
     "es": "Microsoft Word",
@@ -227,9 +229,14 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
+            },
+            "description": {
+              "es": "Escoje si los datos almacenados se guardarán con detalles como estilo, alineación, etc.",
+              "en": "Choose if the stored data will be saved with details like style, alignment, etc.",
+              "pr": "Escolha se os dados armazenados serão salvos com detalhes como estilo, alinhamento, etc."
             },
             "title": {
               "es": "Agregar Detalles",
@@ -289,9 +296,9 @@
               "pr": "0"
             },
             "description": {
-              "es": "Comienzo del rango",
-              "en": "Start of range",
-              "pr": "Início do intervalo"
+              "es": "Posición del rango desde donde comienza a copiar el comando.",
+              "en": "Position of the range from where the command starts to copy.",
+              "pr": "Posição do intervalo de onde o comando começa a copiar."
             },
             "title": {
               "es": "Inicio del rango",
@@ -313,9 +320,9 @@
               "pr": "40"
             },
             "description": {
-              "es": "Fin del rango",
-              "en": "End of range",
-              "pr": "Fim do intervalo"
+              "es": "Posición del rango hasta donde copia el comando.",
+              "en": "Position of the range to which the command copies.",
+              "pr": "Posição do intervalo para o qual o comando copia."
             },
             "title": {
               "es": "Fin del rango",
@@ -358,9 +365,9 @@
               "pr": "arquivo.docx"
             },
             "description": {
-              "es": "Elige el documento",
-              "en": "Choose the document",
-              "pr": "Escolha o documento"
+              "es": "Elige el documento donde se pega el contenido copiado.",
+              "en": "Choose the document where the copied content is pasted.",
+              "pr": "Escolha o documento onde o conteúdo copiado é colado."
             },
             "title": {
               "es": "Archivo:",
@@ -420,9 +427,9 @@
               "pr": "0"
             },
             "description": {
-              "es": "Comienzo del rango",
-              "en": "Start of range",
-              "pr": "Início do intervalo"
+              "es": "Posición del rango desde donde comienza a copiar el comando.",
+              "en": "Position of the range from where the command starts to copy.",
+              "pr": "Posição do intervalo de onde o comando começa a copiar."
             },
             "title": {
               "es": "Inicio del rango",
@@ -444,9 +451,9 @@
               "pr": "40"
             },
             "description": {
-              "es": "Fin del rango",
-              "en": "End of range",
-              "pr": "Fim do intervalo"
+              "es": "Posición del rango hasta donde copia el comando.",
+              "en": "Position of the range to which the command copies.",
+              "pr": "Posição do intervalo para o qual o comando copia."
             },
             "title": {
               "es": "Fin del rango",
@@ -731,14 +738,14 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "Colorful Grid",
+              "en": "Colorful Grid",
+              "pr": "Colorful Grid"
             },
             "description": {
-              "es": "Estilo de los bordes de la tabla",
-              "en": "Table border style",
-              "pr": "Estilo de borda da tabela"
+              "es": "Estilo de tabla predeterminada de Microsoft Word",
+              "en": "Microsoft Word default table style",
+              "pr": "Estilo de tabela padrão do Microsoft Word"
             },
             "title": {
               "es": "Estilo de tabla",
@@ -746,9 +753,9 @@
               "pr": "Estilo da tabela"
             },
             "help": {
-              "en": "Choose a predefined style from Microsoft Word",
-              "es": "Escoja un estilo predefinido de Microsoft Word",
-              "pr": "Escolha um estilo predefinido do Microsoft Word"
+              "en": "Optional. Choose a predefined style from Microsoft Word",
+              "es": "Opcional. Escoja un estilo predefinido de Microsoft Word",
+              "pr": "Opcional. Escolha um estilo predefinido do Microsoft Word"
             },
             "options": [
               {
@@ -857,6 +864,16 @@
           },
           {
             "type": "html",
+            "placeholder": {
+              "es": "Line type: Single wavy / Line size: 1 1/2 points",
+              "en": "Line type: Single wavy / Line size: 1 1/2 points",
+              "pr": "Line type: Single wavy / Line size: 1 1/2 points"
+            },
+            "description": {
+              "es": "Estilo de los bordes de la tabla. Tipo de línea y tamaño.",
+              "en": "Table border style. Line type and size.",
+              "pr": "Estilo de borda de tabela. Tipo e tamanho da linha."
+            },
             "title": {
               "es": "Estilos del borde",
               "en": "Border styles",
@@ -1062,9 +1079,9 @@
               "pr": " "
             },
             "description": {
-              "es": "Numero de fila a eliminar de la tabla",
-              "en": "Row number to remove from the table",
-              "pr": "Número da linha a ser removida da tabela"
+              "es": "Opcional. El numero de fila ingresado determina qué fila será eliminada de la tabla.",
+              "en": "Optional. The row number entered determines which row will be removed from the table.",
+              "pr": "Opcional. O número da linha inserido determina qual linha será removida da tabela."
             },
             "title": {
               "es": "Ingrese el numero de fila a eliminar",
@@ -1087,9 +1104,9 @@
               "pr": " "
             },
             "description": {
-              "es": "Numero de columna a eliminar de la tabla",
-              "en": "Column number to remove from the table",
-              "pr": "Número da coluna a ser removida da tabela"
+              "es": "Opcional. El numero de columna ingresado determina qué columna será eliminada de la tabla",
+              "en": "Optional. The column number entered determines which column will be removed from the table.",
+              "pr": "Opcional. O número da coluna inserido determina qual coluna será removida da tabela."
             },
             "title": {
               "es": "Ingrese el numero de columna a eliminar",
@@ -1107,9 +1124,9 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
             },
             "description": {
               "es": "Si se selecciona, agrega una fila al final de la tabla",
@@ -1127,9 +1144,9 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "description": {
               "es": "Si se selecciona, agrega una columna al final de la tabla",
@@ -1152,9 +1169,9 @@
               "pr": "140"
             },
             "description": {
-              "es": "Ancho que tendrá cada columna de la tabla",
-              "en": "Width that each column of the table will have",
-              "pr": "Largura que cada coluna da tabela terá"
+              "es": "Ancho en puntos que tendrá cada columna de la tabla",
+              "en": "Width in points that each column of the table will have",
+              "pr": "Largura em pontos que cada coluna da tabela terá"
             },
             "title": {
               "es": "Ancho de columna",
@@ -1177,9 +1194,9 @@
               "pr": "25"
             },
             "description": {
-              "es": "Alto que tendrá cada fila de la tabla",
-              "en": "Height that each row of the table will have",
-              "pr": "Altura que cada linha da tabela terá"
+              "es": "Alto en puntos que tendrá cada fila de la tabla",
+              "en": "Height in points that each row of the table will have",
+              "pr": "Altura em pontos que cada linha da tabela terá"
             },
             "title": {
               "es": "Alto de fila",
@@ -1356,14 +1373,14 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "Subtitle",
+              "en": "Subtitle",
+              "pr": "Subtitle"
             },
             "description": {
-              "es": "Selector del tipo de texto",
-              "en": "Text type selector",
-              "pr": "Seletor de tipo de texto"
+              "es": "Selector del tipo de texto que tendrá el texto escrito.",
+              "en": "Text type selector that will have the written text.",
+              "pr": "Seletor de tipo de texto que terá o texto escrito."
             },
             "title": {
               "es": "Tipo de texto",
@@ -1422,6 +1439,11 @@
               "en": "1-9",
               "pr": "1-9"
             },
+            "description": {
+              "es": "Nivel que tendrá el texto escrito.",
+              "en": "Level that the written text will have.",
+              "pr": "Nível que o texto escrito terá."
+            },
             "title": {
               "es": "Nivel",
               "en": "Level",
@@ -1437,6 +1459,11 @@
               "en": "12",
               "pr": "12"
             },
+            "description": {
+              "es": "Tamaño de fuente que tendrá el texto escrito.",
+              "en": "Font size that the written text will have.",
+              "pr": "Tamanho da fonte que o texto escrito terá."
+            },
             "title": {
               "es": "Tamaño de fuente",
               "en": "Font size",
@@ -1448,9 +1475,14 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "Left",
+              "en": "Left",
+              "pr": "Left"
+            },
+            "description": {
+              "es": "Alineación que tendrá el texto escrito.",
+              "en": "Align that the written text will have.",
+              "pr": "Alinhamento que o texto escrito terá."
             },
             "title": {
               "es": "Alineación",
@@ -1481,9 +1513,14 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
+            },
+            "description": {
+              "es": "Seleccionar si el texto irá en negrita.",
+              "en": "Select whether the text will be bold.",
+              "pr": "Selecione se o texto ficará em negrito."
             },
             "title": {
               "es": "Negrita",
@@ -1496,9 +1533,14 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
+            },
+            "description": {
+              "es": "Seleccionar si el texto irá en cursiva.",
+              "en": "Select whether the text will be italic.",
+              "pr": "Selecione se o texto ficará em itálico."
             },
             "title": {
               "es": "Cursiva",
@@ -1511,9 +1553,14 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": "",
-              "pr": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
+            },
+            "description": {
+              "es": "Seleccionar si el texto irá subrayado.",
+              "en": "Select whether the text will be underlined.",
+              "pr": "Selecione se o texto será sublinhado."
             },
             "title": {
               "es": "Subrayar",
@@ -1876,8 +1923,8 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "Varible",
-              "en": "Varible",
+              "es": "Variable",
+              "en": "Variable",
               "pr": "Variável"
             },
             "description": {
@@ -1958,14 +2005,14 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "Varible",
-              "en": "Varible",
+              "es": "Variable",
+              "en": "Variable",
               "pr": "Variável"
             },
             "description": {
-              "es": "Almacena el resultado en una variable",
-              "en": "Store the result in a variable",
-              "pr": "Armazenar o resultado em uma variável"
+              "es": "Almacena el número de párrafos en una variable",
+              "en": "Store the number of paragraphs in a variable",
+              "pr": "Armazenar o número de parágrafos em uma variável"
             },
             "title": {
               "es": "Nombre de la variable",
@@ -2043,6 +2090,11 @@
               "es": "Hola mundo",
               "en": "Hello Word",
               "pr": "Olá mundo"
+            },
+            "description": {
+              "es": "Texto que será buscado en los párrafos listados.",
+              "en": "Text to be searched for in the listed paragraphs.",
+              "pr": "Texto a ser pesquisado nos parágrafos listados."
             },
             "title": {
               "es": "Texto a Buscar",
@@ -2268,6 +2320,11 @@
               "en": "Hello Word",
               "pr": "Olá mundo"
             },
+            "description": {
+              "es": "Texto que será agregado al marcador elegido.",
+              "en": "Text that will be added to the chosen bookmark.",
+              "pr": "Texto que será adicionado ao marcador escolhido."
+            },
             "title": {
               "es": "Texto a agregar",
               "en": "Text to add",
@@ -2282,6 +2339,11 @@
               "es": "Marcador 1",
               "en": "Bookmark 1",
               "pr": "Marcador 1"
+            },
+            "description": {
+              "es": "Nombre del marcador donde se agregará el texto.",
+              "en": "Name of the bookmark where the text will be added.",
+              "pr": "Nome do marcador onde o texto será adicionado."
             },
             "title": {
               "es": "Nombre del Marcador",

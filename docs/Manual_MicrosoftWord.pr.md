@@ -1,6 +1,6 @@
 # Microsoft Word
-
-Módulo para trabalhar com Microsoft Word 
+  
+Modulo para trabajar con Microsoft Word  
 
 *Read this in other languages: [English](Manual_MicrosoftWord.md), [Portugues](Manual_MicrosoftWord.pr.md), [Español](Manual_MicrosoftWord.es.md).*
   
@@ -35,25 +35,25 @@ Extraia o texto do documento Word.
 | --- | --- | --- |
 |Resultado|Armazenar o resultado em uma variável|Variável|
 |Sessão|sessão de arquivo|Word1|
-|Adicionar detalhes|||
+|Adicionar detalhes|Escolha se os dados armazenados serão salvos com detalhes como estilo, alinhamento, etc.|True|
 
 ### Copie e cole o texto
   
 Copie o texto entre os intervalos no documento do Word e cole-o em outro documento.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
-|Início do intervalo|Início do intervalo|0|
-|fim do intervalo|Fim do intervalo|40|
+|Início do intervalo|Posição do intervalo de onde o comando começa a copiar.|0|
+|fim do intervalo|Posição do intervalo para o qual o comando copia.|40|
 |Sessão do arquivo a ser copiado|sessão de arquivo|Word1|
-|Arquivo|Escolha o documento|arquivo.docx|
+|Arquivo|Escolha o documento onde o conteúdo copiado é colado.|arquivo.docx|
 
 ### Copiar texto
   
 Copiar texto para prancheta entre intervalos no documento Word
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
-|Início do intervalo|Início do intervalo|0|
-|Fim do intevalo|Fim do intervalo|40|
+|Início do intervalo|Posição do intervalo de onde o comando começa a copiar.|0|
+|Fim do intevalo|Posição do intervalo para o qual o comando copia.|40|
 |Sessão|sessão de arquivo|Word1|
 
 ### Colar texto
@@ -79,9 +79,9 @@ Adicionar tabela em um documento do Word.
 | --- | --- | --- |
 |Numero de linhas|Número de linhas que a tabela terá|3 |
 |Numero de colunas|Número de colunas que a tabela terá|4 |
-|Estilo da tabela|Estilo de borda da tabela||
+|Estilo da tabela|Estilo de tabela padrão do Microsoft Word|Colorful Grid|
 |Sessão|sessão de arquivo|Word1|
-|Estilos de borda|||
+|Estilos de borda|Estilo de borda de tabela. Tipo e tamanho da linha.|Line type: Single wavy / Line size: 1 1/2 points|
 
 ### Ler tabelas
   
@@ -99,12 +99,12 @@ Editar uma tabela em um documento Word.
 | --- | --- | --- |
 |Número da tabela|Número da tabela a ser editada|1|
 |Sessão|sessão de arquivo|Word1|
-|Digite o número da linha para excluir|Número da linha a ser removida da tabela| |
-|Digite o número da coluna para excluir|Número da coluna a ser removida da tabela| |
-|Inserir linha|Se selecionado, adiciona uma linha ao final da tabela||
-|Inserir coluna|Se selecionado, adiciona uma coluna ao final da tabela||
-|Largura da coluna|Largura que cada coluna da tabela terá|140|
-|Altura da linha|Altura que cada linha da tabela terá|25|
+|Digite o número da linha para excluir|Opcional. O número da linha inserido determina qual linha será removida da tabela.| |
+|Digite o número da coluna para excluir|Opcional. O número da coluna inserido determina qual coluna será removida da tabela.| |
+|Inserir linha|Se selecionado, adiciona uma linha ao final da tabela|True|
+|Inserir coluna|Se selecionado, adiciona uma coluna ao final da tabela|False|
+|Largura da coluna|Largura em pontos que cada coluna da tabela terá|140|
+|Altura da linha|Altura em pontos que cada linha da tabela terá|25|
 
 ### Salvar documento
   
@@ -121,13 +121,13 @@ Escreva em um documento Word.
 | --- | --- | --- |
 |Sessão|sessão de arquivo|Word1|
 |Escrever texto|Texto a ser escrito no documento|Lorem ipsum |
-|Tipo de texto|Seletor de tipo de texto||
-|Nível||1-9|
-|Tamanho da fonte||12|
-|Alinhamento|||
-|Negrito|||
-|Itálico|||
-|Sublinhar|||
+|Tipo de texto|Seletor de tipo de texto que terá o texto escrito.|Subtitle|
+|Nível|Nível que o texto escrito terá.|1-9|
+|Tamanho da fonte|Tamanho da fonte que o texto escrito terá.|12|
+|Alinhamento|Alinhamento que o texto escrito terá.|Left|
+|Negrito|Selecione se o texto ficará em negrito.|True|
+|Itálico|Selecione se o texto ficará em itálico.|True|
+|Sublinhar|Selecione se o texto será sublinhado.|False|
 
 ### Fechar documento
   
@@ -174,7 +174,7 @@ Conte o número de parágrafos no documento.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Sessão|sessão de arquivo|Word1|
-|Nome variável|Armazenar o resultado em uma variável|Variável|
+|Nome variável|Armazenar o número de parágrafos em uma variável|Variável|
 
 ### Substituir texto no parágrafo
   
@@ -182,7 +182,7 @@ Substituir o texto de um parágrafo.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Sessão|sessão de arquivo|Word1|
-|Texto para pesquisar||Olá mundo|
+|Texto para pesquisar|Texto a ser pesquisado nos parágrafos listados.|Olá mundo|
 |Texto a substituir|Texto a ser substituído|Olá mundo|
 |Lista de parágrafos|Parágrafos onde o texto especificado será pesquisado|Exemplo ',' separado por vírgula: 1,2|
 
@@ -201,5 +201,5 @@ Adicionar texto a um bookmark.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Sessão|sessão de arquivo|Word1|
-|Texto a adicionar||Olá mundo|
-|Nome do marcador||Marcador 1|
+|Texto a adicionar|Texto que será adicionado ao marcador escolhido.|Olá mundo|
+|Nome do marcador|Nome do marcador onde o texto será adicionado.|Marcador 1|
