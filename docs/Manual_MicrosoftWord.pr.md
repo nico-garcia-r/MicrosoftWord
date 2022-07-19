@@ -4,7 +4,7 @@ Modulo para trabajar con Microsoft Word
 
 *Read this in other languages: [English](Manual_MicrosoftWord.md), [Portugues](Manual_MicrosoftWord.pr.md), [Español](Manual_MicrosoftWord.es.md).*
   
-![banner](/docs/imgs/Banner_C:\Users\nicog\Desktop\Rocketbot\modules\MicrosoftWord.png)
+![banner](/docs/imgs/Banner_MicrosoftWord.png)
 ## Como instalar este módulo
   
 __Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
